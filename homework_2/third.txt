@@ -1,0 +1,5 @@
+gedit numbers.txt
+cat numbers.txt
+cat numbers.txt | sort -n | uniq
+cat numbers.txt | head -n 1 //shte izkara nai-malkoto chislo
+cat numbers.txt | tail -n 1 //shte zikara nai-golqmoto chislo
