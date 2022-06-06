@@ -10,15 +10,15 @@ int main()
     double a1, b1, c1;
     double per, s;
     printf("Enter a, b and c:\n");
-    while ((scanf("%lf %lf %lf", &a1, &b1, &c1)) != EOF)
+    while ((fcanf(stdin, "%lf %lf %lf", &a1, &b1, &c1)) != EOF)
     {
         if (triangle(a1, b1, c1, &per, &s) == -1)
         {
-            printf("Your data is invalid. Please try again.\n");
+            fprintf(stderr, "Your data is invalid. Please try again.\n");
         }
         else
         {
-            printf("Perimeter is: %.2lf,\nS is: %.2lf\n", per, s);
+            fprintf(stdout, "Perimeter is: %.2lf,\nS is: %.2lf\n", per, s);
         }
     }
     return 0;
