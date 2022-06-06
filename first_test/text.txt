@@ -1,0 +1,20 @@
+3.1
+ps -u daniela //shte izkara vsichki raboteshti procesi na tek potrebitel
+--------------------------------------------------------------------------
+3.2
+mkdir 'MMS C camp'
+cp -rfi *.c 'MMS C camp' //shte mi pokaje vs failove zavurshvashti na .c
+rm -rfi [1-9]*./
+
+3.3
+cd Desktop
+touch testFile
+ls -l //shte mi pokaje spisuk s pravata
+chmod 754 testFile
+------------------------------------------------------------
+3.4
+touch source1.c
+touch source2.c
+wc -w source1.c > lineCount
+wc -w source2.c > lineCount
+----------------------------------------------
