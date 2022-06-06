@@ -10,15 +10,15 @@ int main()
     double r1, h1;
     double vol, s;
     printf("Enter r, h:\n");
-    while ((scanf("%lf %lf", &r1, &h1)) != EOF)
+    while ((fscanf(stdin, "%lf %lf", &r1, &h1)) != EOF)
     {
         if (cylinder(r1, h1, &vol, &s) == -1)
         {
-            printf("Your data is invalid. Please try again.\n");
+            fprintf(stderr, "Your data is invalid. Please try again.\n");
         }
         else
         {
-            printf("V is: %.2lf,\nS is: %.2lf\n", vol, s);
+            printf(stdout"V is: %.2lf,\nS is: %.2lf\n", vol, s);
         }
     }
     return 0;
