@@ -16,7 +16,7 @@ unsigned long onesCount(uint64_t mask)
 {
     unsigned long count = 0;
 
-    for(unsigned long i = 0; i < sizeof(mask); i++)
+    for(unsigned long i = 0; i < sizeof(mask) * __CHAR_BIT__; i++)
     {
         int check = !!((1ul<<i)&mask);
         if(check == 1)
